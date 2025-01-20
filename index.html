@@ -343,43 +343,37 @@ class="math inline">\(\boldsymbol{G}:\Omega\to \mathbb{R}^{3\times
 class="math inline">\(\boldsymbol{a} \otimes \boldsymbol{b}\)</span> of
 two vectors in <span class="math inline">\(\mathbb{R}^3\)</span>.)</p>
 <p>The elastic term in the energy functional to be minimized is 
-  <span class="math display">\[\begin{equation}
-    \label{eq:storedEnergy1}
+  <span class="math display" id="eq:storedEnergy1" label="eq:storedEnergy1">\begin{equation}
     I_{\text{elastic}}[\boldsymbol{u}]:= \int_\Omega W\big
 (\boldsymbol{x}, \nabla \boldsymbol{u}(\boldsymbol{x})\big )
 \mathrm{d}\boldsymbol{x},
-\end{equation}\]</span> where the stored-energy density <span
+\end{equation}</span> where the stored-energy density <span
 class="math inline">\(W\)</span> is assumed to be polyconvex <span
 class="citation" data-cites="Ball77 Ciarlet88 Dacorogna08">(Ball 1977;
 Ciarlet 1988; Dacorogna 2008)</span>, i.e., of the form <span
-class="math display">\[\begin{equation}
-    \label{eq:storedEnergy2}
+class="math display" id="eq:storedEnergy2" label="eq:storedEnergy2">\begin{equation}
 W(\boldsymbol{x}, \boldsymbol{F})=
   \Phi\big (\boldsymbol{x}, (\boldsymbol{F},
 \mathop{\mathrm{cof}}\boldsymbol{F}, \det \boldsymbol{F})\big )
   \ \text{for some} \
   \Phi: \Omega\times (\mathbb{R}^{3\times 3}\times \mathbb{R}^{3\times
 3}\times (0,\infty)\big )\to [0,\infty]
-  
-\end{equation}\]</span> such that <span
+\end{equation}</span> such that <span
 class="math inline">\(\Phi(\boldsymbol{x}, \cdot)\)</span> is convex for
 almost every <span class="math inline">\(\boldsymbol{x}\in
 \Omega\)</span>. Here <span
 class="math inline">\(\mathop{\mathrm{cof}}\boldsymbol{F}\)</span>
 denotes the matrix of cofactors of the deformation gradient <span
 class="math inline">\(\boldsymbol{F}\)</span>. Paradigmatic examples
-include the neo-Hookean <span class="math display">\[\begin{equation}
-    \label{eq:storedEnergy3}
+include the neo-Hookean <span class="math display"  id="eq:storedEnergy3" label="eq:storedEnergy3">\begin{equation}
     W(\boldsymbol{F}) = \frac{\mu}{2} ( |\boldsymbol{F}|^2 -3) -\mu\ln
 \det\boldsymbol{F}  + \frac{\lambda}{2}(\det \boldsymbol{F} -1)^2
-  
-\end{equation}\]</span> and the Mooney-Rivlin <span
-class="math display">\[\begin{equation}
+\end{equation}</span> and the Mooney-Rivlin <span
+class="math display"  id="eq:storedEnergy4" label="eq:storedEnergy4">\begin{equation}
     \label{eq:storedEnergy4}
     W(\boldsymbol{F}) = C_{10}(\bar{I}_1-3)
       + C_{01}(\bar{I}_2-3) + \frac{1}{D_1}(J-1)^2
-  
-\end{equation}\]</span> models, with <span
+\end{equation}</span> models, with <span
 class="math display">\[\begin{aligned}
    \bar I_1 = J^{-2/3} |\boldsymbol{F}|^2,
    \quad \bar I_2 = J^{-4/3} |\mathop{\mathrm{cof}}\boldsymbol{F}|^2,
@@ -821,11 +815,10 @@ class="math inline">\(R_1&lt;\bar R &lt; R_2\)</span> <span
 class="math display">\[4\pi r(R)^3 - 4\pi r_1^3 =
 |\boldsymbol{u}(\{R_1&lt;|\boldsymbol{x}|&lt;\bar R\})|
     = |\{R_1&lt;|\boldsymbol{x}| &lt; \bar R\}| = 4\pi {\bar R}^3 - 4\pi
-R_1^3,\]</span> hence <span class="math display">\[\begin{equation}
-	\label{eq:cavitation_solution}
+R_1^3,\]</span> hence <span class="math display" id="eq:cavitation_solution" label="eq:cavitation_solution">\begin{equation}
     r(R) = \sqrt[3]{A^3 + R^3}, \quad A^3 = r_1^3 - R_1^3,
     \quad v(R):=\frac{r(R)}{R} = \sqrt[3]{1 + \frac{A^3}{R^3}}.
-\end{equation}\]</span> Note that the tangential stretch <span
+\end{equation}</span> Note that the tangential stretch <span
 class="math inline">\(v(R)\)</span> is decreasing and satisfies <span
 class="math inline">\(v(R)&gt;1\)</span>. As for the radial stretch,
 <span class="math display">\[\frac{\mathrm{d}r}{\mathrm{d}R} =
@@ -1051,12 +1044,11 @@ class="citation" data-cites="Gent91">(Gent 1991)</span>.</p>
 <p>For kinematics more general than that of radially symmetric
 deformations of an elastic ball, it is more appropriate to study the
 elastostatics equations in terms of the minimization of the elastic
-energy functional <span class="math display">\[\begin{equation}
-      \label{eq:functionalI}
+energy functional <span class="math display" id="eq:functionalI" label="eq:functionalI">\begin{equation}
       I[\boldsymbol{u}]:=
       \int_\Omega W(\nabla
     \boldsymbol{u}(\boldsymbol{x}))\mathrm{d}\boldsymbol{x}
-  \end{equation}\]</span> in a
+  \end{equation}</span> in a
 suitable space <span class="math inline">\(\mathcal A\)</span> of
 admissible deformations <span
 class="math inline">\(\boldsymbol{u}:\Omega \subset
@@ -1064,22 +1056,21 @@ class="math inline">\(\boldsymbol{u}:\Omega \subset
 class="math inline">\(W(\boldsymbol{F})\)</span> is the stored-energy
 function (see Eqs. <a href="#eq:storedEnergy1"
 data-reference-type="eqref"
-data-reference="eq:storedEnergy1">[eq:storedEnergy1]</a>–<a
+data-reference="eq:storedEnergy1">(1)</a>–<a
 href="#eq:storedEnergy4" data-reference-type="eqref"
-data-reference="eq:storedEnergy4">[eq:storedEnergy4]</a>). However, many
-challenges remained in the problem of proving the existence of minimizers
+data-reference="eq:storedEnergy4">(4)</a>). However, many
+challenges remain in the problem of proving the existence of minimizers
 for the neo-Hookean model <a href="#eq:storedEnergy3"
 data-reference-type="eqref"
-data-reference="eq:storedEnergy3">[eq:storedEnergy3]</a>. The current
+data-reference="eq:storedEnergy3">(3)</a>. The current
 proofs still require growth conditions of the form <span
 class="math display">\[\begin{equation}
    \label{eq:coercivity0}
 W(\boldsymbol{F})\geq C(|\boldsymbol{F}|^p + H(\det \boldsymbol{F}) -
-1),\end{equation}\]</span> or <span class="math display">\[\begin{equation}
-   \label{eq:coercivity1}
+1),\end{equation}\]</span> or <span class="math display" id="eq:coercivity1" label="eq:coercivity1">\begin{equation}
 W(\boldsymbol{F}) \geq C(|\boldsymbol{F}|^2 +
 A(|\mathop{\mathrm{cof}}\boldsymbol{F}|) + H(\det \boldsymbol{F}) -1 ),
-\end{equation}\]</span> for some constant <span
+\end{equation}</span> for some constant <span
 class="math inline">\(C&gt;0\)</span>, with either:</p>
 <ul>
 <li><p><span class="math inline">\(p&gt;2\)</span> <span
@@ -1111,7 +1102,7 @@ class="math inline">\(J\)</span>, and going to infinity as <span
 class="math inline">\(J\to 0^+\)</span> (compatible, e.g., with the
 logarithmic term in <a href="#eq:storedEnergy3"
 data-reference-type="eqref"
-data-reference="eq:storedEnergy3">[eq:storedEnergy3]</a>) the only
+data-reference="eq:storedEnergy3">(3)</a>) the only
 existing results are through the process known in the calculus of
 variations as relaxation <span class="citation"
 data-cites="Dacorogna08 Maly93 HeRo18 BaHeMoRo_23 BaHeMoRo_dipoles2 BaHeMoRo24siam">(Dacorogna
@@ -1153,7 +1144,7 @@ by Ball &amp; Murat <span class="citation"
 data-cites="BallMurat1984">(Ball and Murat 1984)</span>, whenever <span
 class="math inline">\(p&lt;3\)</span> (case in which the cavitation
 solution <a href="#eq:cavitation_solution" data-reference-type="eqref"
-data-reference="eq:cavitation_solution">[eq:cavitation_solution]</a> has
+data-reference="eq:cavitation_solution">(5)</a> has
 less energy than the homogeneous deformation satisfying the same
 boundary condition, as shown in <span class="citation"
 data-cites="Ball1982">(Ball 1982)</span>, so that <span
@@ -1198,8 +1189,7 @@ version of the proof was provided by Müller <span class="citation"
 data-cites="Muller88">(Müller 1988)</span>, rewriting the <span
 class="math inline">\(\partial G_{\boldsymbol{u}}=0\)</span> regularity
 assumption in terms of the divergence identities: <span
-class="math display">\[\begin{equation}
-   \label{eq:divergenceIdentities}
+class="math display" id="eq:divergenceIdentities" label="eq:divergenceIdentities">\begin{equation}
    \mathop{\mathrm{Div}}\Big ( (\mathop{\mathrm{adj}}\nabla
 \boldsymbol{u}) \boldsymbol{g}\circ \boldsymbol{u}\Big )
    = (\operatorname{div}\boldsymbol{g})\Big
@@ -1207,7 +1197,7 @@ class="math display">\[\begin{equation}
    \det \nabla \boldsymbol{u}(\boldsymbol{x})
    \quad
    \text{for all}\ \boldsymbol{g} \in C^\infty_c(\mathbb{R}^3)
-\end{equation}\]</span> Taking, in particular, the test function <span
+\end{equation}</span> Taking, in particular, the test function <span
 class="math inline">\(\boldsymbol{g}(\boldsymbol{y})=\boldsymbol{y}/3\)</span>
 yields the famous relation <span class="math display">\[\begin{equation}
 \mathop{\mathrm{Det}}\nabla \boldsymbol{u} = \det \nabla \boldsymbol{u},
@@ -1223,7 +1213,7 @@ class="math display">\[\begin{equation}
    \quad \varphi \in C^1_c(\Omega).
 \end{equation}\]</span> The regularity assumption <a
 href="#eq:divergenceIdentities" data-reference-type="eqref"
-data-reference="eq:divergenceIdentities">[eq:divergenceIdentities]</a>
+data-reference="eq:divergenceIdentities">(9)</a>
 was then relaxed to <span class="math inline">\(\mathbb{M}\big (
 \partial G_{\boldsymbol{u}}) &lt; \infty\)</span> in <span
 class="citation" data-cites="GiMoSo98I">(Giaquinta, Modica, and Souček
@@ -1231,10 +1221,9 @@ class="citation" data-cites="GiMoSo98I">(Giaquinta, Modica, and Souček
 data-cites="HeMo10">(Henao and Mora-Corral 2010, Thm. 3)</span> it was
 observed that it is not necessary to control the whole of the boundary
 of the graph, it suffices to control its (codimension-one) vertical
-part, which can be rewritten as <span class="math inline">\(\sup_j
+part, which can be rewritten as <span class="math inline" id="eq:surface_energy" label="eq:surface_energy">\(\sup_j
 \mathcal E(\boldsymbol{u}_j)&lt; \infty\)</span>, where <span
-class="math display">\[\begin{equation}
-   \label{eq:surface_energy}
+class="math display">\begin{equation}
 \begin{aligned}
 \mathcal E(\boldsymbol{u}) &amp;:= \sup \big \{ \mathcal
 E_{\boldsymbol{u}}(\boldsymbol{f}) :
@@ -1252,7 +1241,7 @@ E_{\boldsymbol{u}}(\boldsymbol{f}) :
 \big ( \boldsymbol{x}, \boldsymbol{u}(\boldsymbol{x})\big )
    \ \mathrm{d}\boldsymbol{x}.
 \end{aligned}
-\end{equation}\]</span> In <span class="citation"
+\end{equation}</span> In <span class="citation"
 data-cites="HeMo10">(Henao and Mora-Corral 2010, Prop. 4)</span> it was
 shown that for a map creating a finite number of cavities, <span
 class="math inline">\(\mathcal E(\boldsymbol{u})\)</span> gives the
@@ -1441,10 +1430,9 @@ class="math inline">\(|\Lambda| (\Omega\times \mathbb{R}^3) \leq
 class="math inline">\(|\Lambda|\)</span> denotes the total variation of
 the measure <span class="math inline">\(\Lambda\)</span>, and is of
 course a measure too.</p>
-<p>Now we claim that a.e. <span class="math inline">\(\boldsymbol{x}_0
+<p>Now we claim that a.e. <span class="math inline" id="eq:goodx0" label="eq:goodx0">\(\boldsymbol{x}_0
 \in \Omega\)</span> satisfies <span
-class="math display">\[\begin{equation}
-\label{eq:goodx0}
+class="math display">\begin{equation}
 \begin{split}
 &amp; \mathop{\mathrm{cof}}\nabla \boldsymbol{u}(\boldsymbol{x}_0 +
 \varepsilon\boldsymbol{z}) \to \mathop{\mathrm{cof}}\nabla
@@ -1458,16 +1446,15 @@ L^1_{\mathop{\mathrm{loc}}} (\mathbb{R}^3, \mathbb{R}^{3\times 3}), \\
 \boldsymbol{u}(\boldsymbol{x}_0) \boldsymbol{z} \quad \mbox{in }\
 L^1_{\mathop{\mathrm{loc}}} (\mathbb{R}^3, \mathbb{R}^3)
 \end{split}
-\end{equation}\]</span> as <span class="math inline">\(\varepsilon\to
+\end{equation}</span> as <span class="math inline">\(\varepsilon\to
 0\)</span> (where of course <span class="math inline">\(\boldsymbol{z}
 \in \mathbb{R}^3\)</span> denotes the independent variable), and <span
-class="math display">\[\begin{equation}
-\label{eq:limsupLambda}
+class="math display" id="eq:limsupLambda" label="eq:limsupLambda">\begin{equation}
 \limsup_{r\searrow 0} \frac{|\Lambda| \left( B((\boldsymbol{x}_0,
 \boldsymbol{u}(\boldsymbol{x}_0)), r) \right)}{r^3} &lt; \infty
 .\
-\end{equation}\]</span> Indeed, <a href="#eq:goodx0" data-reference-type="eqref"
-data-reference="eq:goodx0">[eq:goodx0]</a> is satisfied for any <span
+\end{equation}</span> Indeed, <a href="#eq:goodx0" data-reference-type="eqref"
+data-reference="eq:goodx0">(13)</a> is satisfied for any <span
 class="math inline">\(\boldsymbol{x}_0\)</span> that is a Lebesgue point
 of <span class="math inline">\(\mathop{\mathrm{cof}}\nabla
 \boldsymbol{u}\)</span> and of <span
@@ -1475,7 +1462,7 @@ class="math inline">\(\theta\)</span>, and a point of approximate
 differentiability of <span
 class="math inline">\(\boldsymbol{u}\)</span>. To show <a
 href="#eq:limsupLambda" data-reference-type="eqref"
-data-reference="eq:limsupLambda">[eq:limsupLambda]</a> we use that, as
+data-reference="eq:limsupLambda">(14)</a> we use that, as
 <span class="math inline">\(\Lambda\)</span> is a Radon measure, the set
 <span class="math display">\[\{ (\boldsymbol{x}, \boldsymbol{y}) \in
 \Omega \times \mathbb{R}^3:\ \limsup_{r\searrow 0} \frac{|\Lambda|
@@ -1495,13 +1482,13 @@ class="math inline">\(\Omega_d\)</span> is the set of approximate
 differentiability of <span
 class="math inline">\(\boldsymbol{u}\)</span>. Hence <a
 href="#eq:limsupLambda" data-reference-type="eqref"
-data-reference="eq:limsupLambda">[eq:limsupLambda]</a> holds a.e. <span
+data-reference="eq:limsupLambda">(14)</a> holds a.e. <span
 class="math inline">\(\boldsymbol{x}_0\)</span>. We fix, until the end
 of the proof, an <span class="math inline">\(\boldsymbol{x}_0 \in
 \Omega_d\)</span> such that <a href="#eq:goodx0"
-data-reference-type="eqref" data-reference="eq:goodx0">[eq:goodx0]</a>
+data-reference-type="eqref" data-reference="eq:goodx0">(13)</a>
 and <a href="#eq:limsupLambda" data-reference-type="eqref"
-data-reference="eq:limsupLambda">[eq:limsupLambda]</a> hold. We shall
+data-reference="eq:limsupLambda">(14)</a> hold. We shall
 prove that <span class="math inline">\(\theta (\boldsymbol{x}_0)=\det
 \nabla \boldsymbol{u} (\boldsymbol{x}_0)\)</span>.</p>
 <p>Given any <span class="math inline">\(\boldsymbol{f}\in
@@ -1583,15 +1570,14 @@ class="math display">\[\lim_{\varepsilon\to 0} \frac{\Lambda
 \mathrm{d}\boldsymbol{z} .\]</span> Thus, in order to show that <span
 class="math inline">\(\theta (\boldsymbol{x}_0) = \det \nabla
 \boldsymbol{u} (\boldsymbol{x}_0)\)</span>, it suffices to prove that
-<span class="math display">\[\begin{equation}
-  \label{eq:limLambdafe}
+<span class="math display" id="eq:limLambdafe" label="eq:limLambdafe">\begin{equation}
 \lim_{\varepsilon\to 0} \frac{\Lambda
 (\boldsymbol{f}_\varepsilon)}{\varepsilon^{2}} =0
 \quad \mbox{for every}\ \boldsymbol{f}\in C^{\infty}_c (\mathbb{R}^3
 \times \mathbb{R}^3, \mathbb{R}^3) .\
-\end{equation}\]</span> Indeed assuming <a
+\end{equation}</span> Indeed assuming <a
 href="#eq:limLambdafe" data-reference-type="eqref"
-data-reference="eq:limLambdafe">[eq:limLambdafe]</a> to be true, we
+data-reference="eq:limLambdafe">(16)</a> to be true, we
 choose <span class="math inline">\(\boldsymbol{g} \in
 C^{\infty}_c(\mathbb{R}^3, \mathbb{R}^3)\)</span> such that <span
 class="math inline">\(\operatorname{div}\boldsymbol{g}\)</span> is not
@@ -1616,7 +1602,7 @@ class="math inline">\(\theta (\boldsymbol{x}_0) = \det \nabla
 \boldsymbol{u} (\boldsymbol{x}_0)\)</span>.</p>
 <p>In order to prove <a href="#eq:limLambdafe"
 data-reference-type="eqref"
-data-reference="eq:limLambdafe">[eq:limLambdafe]</a>, we exploit the
+data-reference="eq:limLambdafe">(16)</a>, we exploit the
 fact that <span class="math inline">\(\Lambda\)</span> is a measure in
 <span class="math inline">\(\Omega \times \mathbb{R}^3\)</span>. Thus,
 for any <span class="math inline">\(\boldsymbol{f} \in C^{\infty}_c
@@ -1639,9 +1625,9 @@ B((\boldsymbol{x}_0, \boldsymbol{u}(\boldsymbol{x}_0)), \varepsilon R
 \boldsymbol{u}(\boldsymbol{x}_0)), \varepsilon R \right)}{(\varepsilon
 R)^3},\]</span> and <a href="#eq:limLambdafe"
 data-reference-type="eqref"
-data-reference="eq:limLambdafe">[eq:limLambdafe]</a> is obtained as a
+data-reference="eq:limLambdafe">(16)</a> is obtained as a
 consequence of <a href="#eq:limsupLambda" data-reference-type="eqref"
-data-reference="eq:limsupLambda">[eq:limsupLambda]</a>. ◻</p>
+data-reference="eq:limsupLambda">(14)</a>. ◻</p>
 </div>
 <h1 id="sec:nematic">4. Nematic elastomers</h1>
 <p>The geometrically nonlinear model of Barchiesi &amp; De Simone <span
@@ -1695,11 +1681,10 @@ magneto-viscoelastic flows; <span class="citation"
 data-cites="DaMoSt22">(Davoli, Molchanova, and Stefanelli 2022)</span>
 for charged hyperelastic solids.</p>
 <p>The coercivity hypothesis <span
-class="math display">\[\begin{equation}
-\label{eq:coercivity}
+class="math display" id="eq:coercivity" label="eq:coercivity">\begin{equation}
 \widetilde W(\boldsymbol{F}) \geq C(|\boldsymbol{F}|^p + H(\det
 \boldsymbol{F}) - 1),
-\end{equation}\]</span> with <span class="math inline">\(p=3\)</span>, in
+\end{equation}</span> with <span class="math inline">\(p=3\)</span>, in
 <span class="citation" data-cites="Barchiesi15">(Barchiesi and DeSimone
 2015)</span> was relaxed to any <span
 class="math inline">\(p&gt;2\)</span> jointly with Barchiesi and
@@ -1748,10 +1733,10 @@ data-cites="Deimling85 FoGa95book">(Deimling 1985; Fonseca and Gangbo
 <p>Recall that <span class="math inline">\(\mathcal
 E(\boldsymbol{u})\)</span> in <a href="#eq:surface_energy"
 data-reference-type="eqref"
-data-reference="eq:surface_energy">[eq:surface_energy]</a> vanishes if
+data-reference="eq:surface_energy">(12)</a> vanishes if
 the divergence identities <a href="#eq:divergenceIdentities"
 data-reference-type="eqref"
-data-reference="eq:divergenceIdentities">[eq:divergenceIdentities]</a>
+data-reference="eq:divergenceIdentities">(9)</a>
 are fulfilled.</p>
 <div class="definition">
 <p><strong>Definition 4</strong>. For each <span
@@ -1928,11 +1913,10 @@ that if <span class="math inline">\(\boldsymbol{x}_0 \in \partial
 U\)</span> and <span class="math inline">\(\boldsymbol{x} \in B
 (\boldsymbol{x}_0, \delta)\)</span> then <span
 class="math inline">\(\boldsymbol{x} \in \Omega\)</span> and <span
-class="math display">\[\begin{equation}
-\label{eq:unifcont}
+class="math display" id="eq:unifcont" label="eq:unifcont">\begin{equation}
 | \hat{\boldsymbol{u}} (\boldsymbol{x}) - \hat{\boldsymbol{u}}
 (\boldsymbol{x}_0) | &lt; \eta .\
-\end{equation}\]</span> For <span
+\end{equation}</span> For <span
 class="math inline">\(\delta &gt;0\)</span> small, the map <span
 class="math display">\[\begin{aligned}
 \boldsymbol{p}: \partial U \times (-\delta, \delta) &amp; \to
@@ -1973,7 +1957,7 @@ class="math inline">\(\boldsymbol{v} = \hat{\boldsymbol{u}}\)</span> in
 (\boldsymbol{u}, U_t, \cdot) \ \text{ in } \mathbb{R}^n\setminus
 \boldsymbol{u} (\partial U_t) .\]</span> Now, thanks to <a
 href="#eq:unifcont" data-reference-type="eqref"
-data-reference="eq:unifcont">[eq:unifcont]</a> we have that for each
+data-reference="eq:unifcont">(19)</a> we have that for each
 <span class="math inline">\(\boldsymbol{y} \in K\)</span>, <span
 class="math inline">\(\boldsymbol{x}_0 \in \partial U\)</span> and <span
 class="math inline">\(\lambda\in [0, t]\)</span>, <span
@@ -2065,8 +2049,7 @@ class="math inline">\(j \in \mathbb{N}\)</span>, let <span
 class="math inline">\(\boldsymbol{u}, \boldsymbol{u}_j \in
 \mathcal{A}_p\)</span> and <span class="math inline">\(\boldsymbol{n}_j
 \in H^1 (\mathop{\mathrm{im_T}}(\boldsymbol{u}_j, \Omega), K)\)</span>
-be such that <span class="math display">\[\begin{equation}
-  \label{eq:wjWr}
+be such that <span class="math display" id="eq:wjWr" label="eq:wjWr">\begin{equation}
     \begin{aligned}
     \det \nabla \boldsymbol{u}\in L^1(\Omega),
     &amp;\quad
@@ -2079,18 +2062,17 @@ W^{1,p} (\Omega, \mathbb{R}^3) \ \text{ as } j \to \infty
 (\mathop{\mathrm{im_T}}(\boldsymbol{u}_j, \Omega), \mathbb{R}^{3\times
 3})} \right] &lt; \infty .
     \end{aligned}\
-  \end{equation}\]</span> Then there exists <span
+  \end{equation}</span> Then there exists <span
 class="math inline">\(\boldsymbol{n} \in
 H^1(\mathop{\mathrm{im_T}}(\boldsymbol{u}, \Omega), K)\)</span> such
-that <span class="math display">\[\begin{equation}
-  [\label{eq:Wlower}
+that <span class="math display" id="eq:Wlower" label="eq:Wlower">\begin{equation}
 \int_{\mathop{\mathrm{im_T}}(\boldsymbol{u}, \Omega)}
 |D\boldsymbol{n}(\boldsymbol{y})|^2 \, \mathrm{d}\boldsymbol{y}
 \leq \liminf_{j \to \infty}
 \int_{\mathop{\mathrm{im_T}}(\boldsymbol{u}_j, \Omega)}
     |D\boldsymbol{n}_j (\boldsymbol{y})|^2\,
 \mathrm{d}\boldsymbol{y}\
-\end{equation}\]</span> and <span
+\end{equation}</span> and <span
 class="math display">\[\begin{aligned}
     \boldsymbol{n}_j \rightharpoonup\boldsymbol{n} \quad \text{in}\
 H^1(V, K)
@@ -2102,7 +2084,7 @@ H^1(V, K)
 <p><em>Proof.</em> For a subsequence, we can assume that the <span
 class="math inline">\(\liminf\)</span> of the right-hand side of <a
 href="#eq:Wlower" data-reference-type="eqref"
-data-reference="eq:Wlower">[eq:Wlower]</a> is actually a limit. For each
+data-reference="eq:Wlower">(21)</a> is actually a limit. For each
 <span class="math inline">\(j \in \mathbb{N}\)</span>, let <span
 class="math inline">\(\bar{\boldsymbol{n}}_j\)</span> and <span
 class="math inline">\(\boldsymbol{N}_j\)</span> be the extensions of
@@ -2118,15 +2100,14 @@ bounded in <span class="math inline">\(L^2 (\mathbb{R}^3, \mathbb{R}^{3
 class="math inline">\(\bar{\boldsymbol{n}} \in L^1 (\mathbb{R}^3,
 \mathbb{R}^3)\)</span> and <span class="math inline">\(\boldsymbol{N}
 \in L^2 (\mathbb{R}^3, \mathbb{R}^{3 \times 3})\)</span> such that, for
-a subsequence, <span class="math display">\[\begin{equation}
-  \label{eq:wW}
+a subsequence, <span class="math display" id="eq:wW" label="eq:wW">\begin{equation}
 \bar{\boldsymbol{n}}_j \overset{b}{\rightharpoonup} \bar{\boldsymbol{n}}
 \quad \text{in }
 L^1  (\mathbb{R}^3, \mathbb{R}^3)\qquad \text{and} \qquad
 \boldsymbol{N}_j \rightharpoonup\boldsymbol{N}
 \quad \text{in } L^2  (\mathbb{R}^3, \mathbb{R}^{3 \times 3}) \quad
 \text{as } j \to \infty .\
-\end{equation}\]</span> We have denoted by <span
+\end{equation}</span> We have denoted by <span
 class="math inline">\(\overset{b}{\rightharpoonup}\)</span> convergence
 in the biting sense <span class="citation"
 data-cites="BrCh80 BaMu89">(Brooks and Chacon 1980; Ball and Murat
@@ -2163,7 +2144,7 @@ Sect. 1.1.11)</span>, if necessary) shows that <span
 class="math inline">\(\{\boldsymbol{n}_j\}_{j \in \mathbb{N}}\)</span>
 is bounded in <span class="math inline">\(H^{1} (V,
 \mathbb{R}^3)\)</span>. Thus, by <a href="#eq:wW"
-data-reference-type="eqref" data-reference="eq:wW">[eq:wW]</a> we have
+data-reference-type="eqref" data-reference="eq:wW">(22)</a> we have
 <span class="math display">\[\begin{equation}
   \label{eq:wjwV}
 \boldsymbol{n}_j \rightharpoonup\bar{\boldsymbol{n}} \ \text{ in } \
@@ -2197,13 +2178,12 @@ class="math inline">\(\bar{\boldsymbol{n}} \in H^1
 <p>Let now <span class="math inline">\(\{ V_k \}_{k \in
 \mathbb{N}}\)</span> be the family of Lemma <a href="#le:imTuO"
 data-reference-type="ref" data-reference="le:imTuO">10</a>. Then, <span
-class="math display">\[\begin{equation}
-\label{eq:imTvVk}
+class="math display" id="eq:imTvVk" label="eq:imTvVk">\begin{equation}
 \int_{\mathop{\mathrm{im_T}}(\boldsymbol{u}, \Omega)}
 |D\boldsymbol{n}|^2 \, \mathrm{d}\boldsymbol{y}
 = \sum_{k \in \mathbb{N}} \int_{V_k} |D\boldsymbol{n}|^2 \,
 \mathrm{d}\boldsymbol{y}\
-\end{equation}\]</span> and, for each <span
+\end{equation}</span> and, for each <span
 class="math inline">\(j \in \mathbb{N}\)</span>, <span
 class="math display">\[\int_{\mathop{\mathrm{im_T}}(\boldsymbol{u}_j,
 \Omega) \cap \mathop{\mathrm{im_T}}(\boldsymbol{u}, \Omega)}
@@ -2220,29 +2200,28 @@ data-reference="th:ujINV">12</a> <span
 class="math inline">\(V_k\subset\mathop{\mathrm{im_T}}(\boldsymbol{u}_j,
 \Omega)\)</span> for a subsequence, thanks to the bound in <a
 href="#eq:wjWr" data-reference-type="eqref"
-data-reference="eq:wjWr">[eq:wjWr]</a> and the convergences of <a
+data-reference="eq:wjWr">(20)</a> and the convergences of <a
 href="#eq:wW" data-reference-type="eqref"
-data-reference="eq:wW">[eq:wW]</a>, we obtain, arguing as in <a
+data-reference="eq:wW">(22)</a>, we obtain, arguing as in <a
 href="#eq:wjwV" data-reference-type="eqref"
-data-reference="eq:wjwV">[eq:wjwV]</a>, that <span
+data-reference="eq:wjwV">(20)</a>, that <span
 class="math inline">\(\boldsymbol{n}_j
 \rightharpoonup\boldsymbol{n}\)</span> in <span
 class="math inline">\(W^{1,2}(V_k,\mathbb{R}^d)\)</span> as <span
 class="math inline">\(j \to \infty\)</span>. By the lower semicontinuity
 theorem <span class="citation" data-cites="Dacorogna08">(Dacorogna 2008,
 Th. 8.4)</span> for quasiconvex functions, <span
-class="math display">\[\begin{equation}
-\label{eq:imTvVk1}
+class="math display" id="eq:imTvVk1" label="eq:imTvVk1">\begin{equation}
 \int_{V_k} |D\boldsymbol{n}|^2 \, \mathrm{d}\boldsymbol{y}
 \leq \liminf_{j \to \infty} \int_{V_k} |D\boldsymbol{n}_j|^2 \,
 \mathrm{d}\boldsymbol{y}
 = \liminf_{j \to \infty} \int_{\mathop{\mathrm{im_T}}(\boldsymbol{u}_j,
 \Omega) \cap V_k} |D\boldsymbol{n}_j|^2 \, \mathrm{d}\boldsymbol{y}
 .\
-\end{equation}\]</span> Putting together equations <a href="#eq:imTvVk"
+\end{equation}</span> Putting together equations <a href="#eq:imTvVk"
 data-reference-type="eqref"
-data-reference="eq:imTvVk">[eq:imTvVk]</a>–<a href="#eq:imTvVk1"
-data-reference-type="eqref" data-reference="eq:imTvVk1">[eq:imTvVk1]</a>
+data-reference="eq:imTvVk">(24)</a>–<a href="#eq:imTvVk1"
+data-reference-type="eqref" data-reference="eq:imTvVk1">(25)</a>
 we obtain <span class="math display">\[\begin{split}
 &amp; \int_{\mathop{\mathrm{im_T}}(\boldsymbol{u}, \Omega)}
 |D\boldsymbol{n}|^2 \, \mathrm{d}\boldsymbol{y}
@@ -2265,7 +2244,7 @@ data-reference-type="ref" data-reference="sec:nematic">4</a> showed how
 a robust existence theory has been successfully developed for elastic
 stored-energy densities satisfying a coercivity assumption of the form
 <a href="#eq:coercivity" data-reference-type="eqref"
-data-reference="eq:coercivity">[eq:coercivity]</a> when <span
+data-reference="eq:coercivity">(17)</a> when <span
 class="math inline">\(p&gt;2\)</span>. In the case when <span
 class="math inline">\(|\boldsymbol{F}|\)</span>, which measures the
 stretch of line elements, appears with a quadratic dependence in the
@@ -2277,7 +2256,7 @@ data-cites="DoHeMo22">(Doležalová, Hencl, and Molchanova 2024,
 Thm. 5.3)</span>), where a superlinear dependence on the growth of area
 elements is also assumed in <a href="#eq:coercivity1"
 data-reference-type="eqref"
-data-reference="eq:coercivity1">[eq:coercivity1]</a>.</p>
+data-reference="eq:coercivity1">(8)</a>.</p>
 <p>Regarding the main problem of proving existence of minimizers without
 resorting to a superlinear growth of the elastic energy in the
 cofactors, the first existence result, due to Malý <span
@@ -2291,7 +2270,7 @@ H^1 \cap \text{Diff}^+,\ \boldsymbol{u}_j \rightharpoonup\boldsymbol{u}
 \end{aligned}\]</span> of the neo-Hookean energy <span
 class="math inline">\(I\)</span> in <a href="#eq:functionalI"
 data-reference-type="eqref"
-data-reference="eq:functionalI">[eq:functionalI]</a>, where the infimum
+data-reference="eq:functionalI">(6)</a>, where the infimum
 is taken over all the sequences <span class="math inline">\(\big
 (\boldsymbol{u}_j\big)_{j\in \mathbb{N}}\)</span>, within a family <span
 class="math inline">\(\mathcal A_{\text{diff}}\)</span> of
@@ -2453,19 +2432,17 @@ relaxation) in the weak closure of homeomorphisms satisfying a
 pure-displacement boundary condition.</p>
 <p>For materials such as <a href="#eq:storedEnergy3"
 data-reference-type="eqref"
-data-reference="eq:storedEnergy3">[eq:storedEnergy3]</a>, where only a
+data-reference="eq:storedEnergy3">(3)</a>, where only a
 logarithmic dependence on the determinant is available, the next result
 after <span class="citation" data-cites="Maly93">(Malý 1993)</span> and
 <span class="citation" data-cites="CoDeLe03">(Conti and De Lellis
 2003)</span> is the characterization <span
-class="math display">\[\begin{equation}
-    \label{eq:atomicDet2}
+class="math display" id="eq:atomicDet2" label="eq:atomicDet2">\begin{equation}
    \mathop{\mathrm{Det}}\nabla \boldsymbol{u} =
    \det \nabla \boldsymbol{u}\,\mathcal L^3
    + \sum_{l=1}^\infty c_l \delta_{\boldsymbol{x}_l}, \quad
    \sum_{l=1}^\infty |c_l| &lt; \infty
-  
-\end{equation}\]</span> obtained by Mucci <span class="citation"
+\end{equation}</span> obtained by Mucci <span class="citation"
 data-cites="Mucci05 Mucci10a Mucci10b Mucci15">(Mucci 2005, 2010b,
 2010a, 2015)</span>, <span class="citation" data-cites="HeMo12">(Henao
 and Mora-Corral 2012, Thm. 6.2)</span> for the singular part of the
@@ -2496,19 +2473,18 @@ class="math display">\[\langle \bar{\mathcal{E}}_{\boldsymbol{u}}
 class="math inline">\(\phi \in C^{\infty}_c (\Omega)\)</span>, where
 <span class="math inline">\(\mathcal{E}\)</span> is defined in <a
 href="#eq:surface_energy" data-reference-type="eqref"
-data-reference="eq:surface_energy">[eq:surface_energy]</a>. If <span
-class="math display">\[\begin{equation}
-\label{eq:EKfinite}
+data-reference="eq:surface_energy">(12)</a>. If <span
+class="math display" id="eq:EKfinite" label="eq:EKfinite">\begin{equation}
 \sup \{ \mathcal{E}_{\boldsymbol{u}} (\phi\, \boldsymbol{g}) : \ \phi
 \in C^{\infty}_c (\Omega) , \ \mathop{\mathrm{spt}}\phi \subset K , \
 \|\phi\|_{\infty} \leq 1 \} &lt; \infty\
-\end{equation}\]</span> for each compact <span
+\end{equation}</span> for each compact <span
 class="math inline">\(K \subset \Omega\)</span>, then <span
 class="math inline">\(\bar{\mathcal{E}}_{\boldsymbol{u}} (\cdot,
 \boldsymbol{g})\)</span> is in fact a Radon measure over <span
 class="math inline">\(\Omega\)</span>.</p></li>
 <li><p>If <a href="#eq:EKfinite" data-reference-type="eqref"
-data-reference="eq:EKfinite">[eq:EKfinite]</a> holds for each compact
+data-reference="eq:EKfinite">(28)</a> holds for each compact
 <span class="math inline">\(K \subset \Omega\)</span> and each <span
 class="math inline">\(\boldsymbol{g} \in C^1_c
 (\mathbb{R}^3,\mathbb{R}^3)\)</span>, we define, for every Borel set
@@ -2553,29 +2529,27 @@ class="math display">\[|\bar{{\mathcal E}}_{\boldsymbol{u}} (U,
 U_{\boldsymbol{u}}\)</span> and every <span
 class="math inline">\(\boldsymbol{g} \in C^1_c
 (\mathbb{R}^n,\mathbb{R}^n)\)</span>, we may write <span
-class="math display">\[\begin{equation}
-\label{eq:Delta_grado}
+class="math display" id="eq:Delta_grado" label="eq:Delta_grado">\begin{equation}
 \int_{\mathbb{R}^n} \Delta_U(\boldsymbol{y})
 \operatorname{div}\boldsymbol{g}(\boldsymbol{y})
 \mathrm{d}\boldsymbol{y} = - \bar{\mathcal E}_{\boldsymbol{u}}(U,
 \boldsymbol{g}),\
-\end{equation}\]</span> where the function <span
+\end{equation}</span> where the function <span
 class="math inline">\(\Delta_U:\mathbb{R}^n \to \mathbb{Z}\)</span> is
-defined by <span class="math display">\[\begin{equation}
-  \label{eq:defDelta}
+defined by <span class="math display" id="eq:defDelta" label="eq:defDelta">\begin{equation}
 \Delta_U(\boldsymbol{y}) := \deg (\boldsymbol{u}, \partial U,
 \boldsymbol{y}) - \sum_{\substack{\boldsymbol{x} \in \Omega_d \cap U \\
 \boldsymbol{u}(\boldsymbol{x})=\boldsymbol{y}}}
 \mathop{\mathrm{sgn}}(\det D \boldsymbol{u}(\boldsymbol{x})) , \qquad
 \boldsymbol{y} \in \mathbb{R}^n.\
-\end{equation}\]</span> Formula <a
+\end{equation}</span> Formula <a
 href="#eq:Delta_grado" data-reference-type="eqref"
-data-reference="eq:Delta_grado">[eq:Delta_grado]</a> shows that the
+data-reference="eq:Delta_grado">(29)</a> shows that the
 <span class="math inline">\(BV\)</span> seminorm of <span
 class="math inline">\(\Delta_U\)</span> is bounded by <span
 class="math inline">\({\bar{\mu}}_{\boldsymbol{u}} (U)\)</span>, whereas
 formula <a href="#eq:defDelta" data-reference-type="eqref"
-data-reference="eq:defDelta">[eq:defDelta]</a> shows that <span
+data-reference="eq:defDelta">(30)</a> shows that <span
 class="math inline">\(\Delta_U\)</span> vanishes a.e. in <span
 class="math inline">\(\mathbb{R}^n\setminus B(\boldsymbol{0}, \|
 \boldsymbol{u}\|_{\infty} )\)</span>. Therefore, by the Poincaré
@@ -2594,7 +2568,7 @@ class="math display">\[|\bar{\mathcal E}_{\boldsymbol{u}}(U,
 \leq c_n \|\operatorname{div}\boldsymbol{g} \|_\infty
 {\bar\mu}_{\boldsymbol{u}} (U)^{\frac{n}{n-1}},\]</span> where we have
 used <a href="#eq:Delta_grado" data-reference-type="eqref"
-data-reference="eq:Delta_grado">[eq:Delta_grado]</a> and the fact that
+data-reference="eq:Delta_grado">(29)</a> and the fact that
 <span class="math inline">\(\Delta_U\)</span> is integer-valued. ◻</p>
 </div>
 <div class="definition">
@@ -2635,11 +2609,10 @@ can find a decreasing sequence <span class="math inline">\(\{U_j\}_{j\in
 \mathbb{N}}\)</span> of open sets, all containing <span
 class="math inline">\(E\)</span> and contained in <span
 class="math inline">\(U\)</span>, such that <span
-class="math display">\[\begin{equation}
-\label{eq:muE}
+class="math display" id="eq:muE" label="eq:muE">\begin{equation}
 \boldsymbol{\mu}(E) = \lim_{j \to \infty} \boldsymbol{\mu
 }(U_j).\
-\end{equation}\]</span> For any Borel <span class="math inline">\(A\subset
+\end{equation}</span> For any Borel <span class="math inline">\(A\subset
 U\)</span> we have that <span class="math inline">\(\lambda (A) \leq
 \lambda (U) \leq \varepsilon\)</span>, and, hence, <span
 class="math inline">\((\lambda(A))^\alpha \leq \varepsilon^{\alpha-1}
@@ -2663,7 +2636,7 @@ class="math display">\[|\boldsymbol{\mu}(U_j) | = \left | \sum_{B\in
 |\boldsymbol{\mu}(B) | \leq c \, \varepsilon^{\alpha-1} \sum_{B\in
 \mathcal B_j} \lambda(B) = c \, \varepsilon^{\alpha-1} \lambda (U_j)
 \leq c \, \varepsilon^\alpha.\]</span> Using <a href="#eq:muE"
-data-reference-type="eqref" data-reference="eq:muE">[eq:muE]</a>, we
+data-reference-type="eqref" data-reference="eq:muE">(31)</a>, we
 obtain that <span class="math inline">\(| \boldsymbol{\mu }(E) | \leq c
 \varepsilon^\alpha\)</span>. Since <span
 class="math inline">\(\varepsilon\)</span> is arbitrary, it follows that
@@ -2704,7 +2677,7 @@ class="math inline">\(\mathop{\mathrm{At}}(
 \mathop{\mathrm{At}}(\mu_{\boldsymbol{u}})\)</span>. Moreover, <span
 class="math inline">\(\mathop{\mathrm{Det}}D \boldsymbol{u}\)</span> is
 a measure and <a href="#eq:atomicDet2" data-reference-type="eqref"
-data-reference="eq:atomicDet2">[eq:atomicDet2]</a> follows.</em></p>
+data-reference="eq:atomicDet2">(27)</a> follows.</em></p>
 </div>
 <div class="proof">
 <p><em>Proof.</em> Fix <span class="math inline">\(\boldsymbol{g} \in
@@ -2760,7 +2733,7 @@ class="math display">\[\begin{aligned}
 \end{aligned}\]</span> (replacing the term <span
 class="math inline">\(H(\det \nabla \boldsymbol{u})\)</span> in <a
 href="#eq:functionalI" data-reference-type="eqref"
-data-reference="eq:functionalI">[eq:functionalI]</a> with <span
+data-reference="eq:functionalI">(6)</a> with <span
 class="math inline">\(H(|\det \nabla \boldsymbol{u}|)\)</span>) and an
 explicit formula for the cost of creating singularities: <span
 class="math display">\[\begin{aligned}
@@ -2786,7 +2759,7 @@ the <span class="math inline">\(\varepsilon\)</span>-cylinder around the
 dipole, for the Conti-De Lellis pathological map. The sharpness result
 is, in a sense, more general, since the characterizatrion <a
 href="#eq:atomicDet2" data-reference-type="eqref"
-data-reference="eq:atomicDet2">[eq:atomicDet2]</a> of the singular part
+data-reference="eq:atomicDet2">(27)</a> of the singular part
 of <span class="math inline">\(\mathop{\mathrm{Det}}\nabla
 \boldsymbol{u}\)</span> as the sum of Dirac masses can be exploited in
 order to obtain a finer description of maps in the weak closure of
@@ -2814,7 +2787,7 @@ class="math display">\[\begin{gathered}
 \\ \det D\boldsymbol{u}&gt;0 \text{ a.e.},\
 I[\boldsymbol{u}]¨&lt;\infty,\ \text{and}\ \boldsymbol{u} \text{
 satisfies the divergence identities
-  \eqref{eq:divergenceIdentities}}\}.
+  (9)}\}.
 \end{gathered}\]</span> Let <span
 class="math inline">\(\boldsymbol{u}\)</span> be a map in the weak <span
 class="math inline">\(H^1\)</span>-closure of <span
@@ -2831,7 +2804,7 @@ traces. Let <span class="math inline">\(C(\boldsymbol{u})\)</span> be
 the set <span class="math inline">\(\{\boldsymbol{x}_l: l\in
 \mathbb{N}\}\)</span> of <a href="#eq:atomicDet2"
 data-reference-type="eqref"
-data-reference="eq:atomicDet2">[eq:atomicDet2]</a>. We have that <span
+data-reference="eq:atomicDet2">(27)</a>. We have that <span
 class="math display">\[\|D^{s}\boldsymbol{u}^{-1}\|
 =\sum_{\boldsymbol{\xi},\boldsymbol{\xi}&#39; \in C(\boldsymbol{u})}
 |\boldsymbol{\xi}-\boldsymbol{\xi}&#39;|\mathcal{H}^2(\Gamma_{\boldsymbol{\xi},\boldsymbol{\xi}&#39;}),\]</span>
@@ -2915,7 +2888,7 @@ singular points with negative degrees).</p>
 <h2 class="unnumbered" id="fracture-by-void-coalescence">Fracture by void coalescence</h2>
 <p>First of all, the characterization <a href="#eq:atomicDet2"
 data-reference-type="eqref"
-data-reference="eq:atomicDet2">[eq:atomicDet2]</a> of the singular part
+data-reference="eq:atomicDet2">(27)</a> of the singular part
 of the distributional Jacobian as a sum of Dirac masses is reminiscent
 of the structure theorem <span class="citation" data-cites="JeSo02">(R.
 Jerrard and Soner 2002)</span> <span
@@ -3016,9 +2989,8 @@ class="math inline">\(\mathop{\mathrm{Det}}D\boldsymbol{u}_\varepsilon=
 class="math inline">\(\Omega_\varepsilon\)</span>, <span
 class="math inline">\(\sup_{\varepsilon}
 \|\boldsymbol{u}_\varepsilon\|_{L^\infty(\Omega_\varepsilon)} &lt;
-\infty\)</span> and <span class="math display">\[\begin{equation}
+\infty\)</span> and <span class="math display" id="eq:hypUB" label="eq:hypUB">\begin{equation}
   \begin{aligned}
-\label{eq:hypUB}
 \frac{1}{n}\int_{\Omega_\varepsilon}
    &amp;\left
 |\frac{D\boldsymbol{u}_\varepsilon(\boldsymbol{x})}{\sqrt{n-1}}\right
@@ -3028,7 +3000,7 @@ class="math inline">\(\sup_{\varepsilon}
 \frac{\mathop{\mathrm{diam}}\Omega}{\varepsilon}
 + C\left ( |\Omega| +  \sum_{i=1}^m v_{i,\varepsilon} \right),
 \end{aligned}\
-\end{equation}\]</span> where <span class="math inline">\(v_{i,
+\end{equation}</span> where <span class="math inline">\(v_{i,
 \varepsilon}:=|\mathop{\mathrm{im_T}}(\boldsymbol{u}_\varepsilon,
 B(\boldsymbol{a}_{i,\varepsilon}, \varepsilon))|
 -\omega_n \varepsilon^n\)</span> and <span
@@ -3084,7 +3056,7 @@ class="math inline">\(|\mathop{\mathrm{im_T}}\big
 <span class="math inline">\(i=1,\ldots, m\)</span>.</em></p>
 </div>
 <p>The question arises of when is the upper bound <a href="#eq:hypUB"
-data-reference-type="eqref" data-reference="eq:hypUB">[eq:hypUB]</a> is
+data-reference-type="eqref" data-reference="eq:hypUB">(32)</a> is
 satisfied. According to the above theorem, while for boundary conditions
 that are compatible with that upper bound the energy minimizers prefer
 the opening of round cavities. Therefore, any tensile load where the
